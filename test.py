@@ -216,4 +216,4 @@ with open("pharmacogenomic_report_2.html", "w") as html_file:
 cursor.close()
 conn.close()
 
-print("Pharmacogenomic Report generated.")
+print("Pharmacogenomic Report generated successfully.")
