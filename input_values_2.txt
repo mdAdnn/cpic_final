@@ -4,6 +4,6 @@ genesymbol,diplotype
 CYP2D6,*10/*36
 CYP2C9,*2/*4
 TPMT,*1/*1
-SLCO1B1,*1/*14
+SLCO1B1,*1/*2
 CYP2B6,*5/*38
 CYP3A5,*4/*8

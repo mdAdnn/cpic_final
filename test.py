@@ -11,7 +11,7 @@ db_params = {
 }
 
 # Read input values from input.txt and organize them into a list of dictionaries
-with open('C:/Users/fcbwa/OneDrive/Desktop/cpic_final/input_values.txt', 'r') as file:
+with open('C:/Users/fcbwa/OneDrive/Desktop/cpic_final-1/input_values_2.txt', 'r') as file:
     lines = file.readlines()
     
     # Initialize variables
@@ -189,6 +189,9 @@ if strong_classification_found:
     for gene in strong_genes:
         html_content += f"<li>{gene}</li>"  # Add each strong gene to the list
     html_content += "</ul>"
+else:
+    html_content += "<h2>Results</h2>"
+    html_content += "<p>No Strong classification were found.</p>"
 
 # Calculate the total results for all entries
 total_results = sum(len(results) for results in gene_results.values())
@@ -206,7 +209,7 @@ html_content += """
 """
 
 # Write HTML content to a file
-with open("pharmacogenomic_report_1.html", "w") as html_file:
+with open("pharmacogenomic_report_2.html", "w") as html_file:
     html_file.write(html_content)
 
 # Close the cursor and connection
